@@ -1,0 +1,14 @@
+name: "Adding workflows/pipeline"
+
+on: 
+    push: 
+        branches:
+            - master
+            - main
+
+jobs:
+    testing-pipeline:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'Run on push command'
+              run: echo 'Running'
